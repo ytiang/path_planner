@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: path_planning
+Description: Description of path_planning
+Version: 1.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lpath_planning
+Requires: roscpp std_msgs visualization_msgs
