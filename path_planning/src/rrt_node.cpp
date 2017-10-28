@@ -3,6 +3,7 @@
 #include <geometry_msgs/Point.h>
 #include <path_planning/rrt.h>
 #include <path_planning/obstacles.h>
+#include "path_planning/path_smoothing.h"
 #include <iostream>
 #include <cmath>
 #include <math.h>
@@ -266,6 +267,8 @@ int main(int argc,char** argv)
             }
             setFinalPathData(rrtPaths, myRRT, shortestPath, finalPath, goalX, goalY);
             rrt_publisher.publish(finalPath);
+//            smooth the finalPath
+//            ceres::GradientProblem problem(new PathSmooth());
         }
 
 

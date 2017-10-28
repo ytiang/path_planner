@@ -18,7 +18,7 @@ catkin_package(
   INCLUDE_DIRS include
   LIBRARIES path_planning
   CATKIN_DEPENDS roscpp std_msgs visualization_msgs
-  DEPENDS system_lib
+#  DEPENDS system_lib
 )
 
 ###########
@@ -36,18 +36,27 @@ include_directories(include
 
 ## Declare a cpp library
 add_library(path_planning
-	src/rrt.cpp
-	src/obstacles.cpp
-        src/path_smooth.cpp)
+		src/rrt.cpp
+		src/obstacles.cpp)
 
 ## Declare a cpp executable
 # add_executable(path_planning_node src/path_planning_node.cpp)
 
-add_executable(rrt_node src/rrt_node.cpp)
-add_dependencies(rrt_node path_planning)
-target_link_libraries(rrt_node path_planning ${catkin_LIBRARIES} )
+add_executable(rrt_node
+        src/rrt_node.cpp
+        src/path_smoothing.cpp)
+add_dependencies(rrt_node
+        path_planning)
+target_link_libraries(rrt_node
+        path_planning
+        ${catkin_LIBRARIES}
+        ${CERES_LIBRARIES})
 
-add_executable(env_node src/environment.cpp include/path_planning/path_smooth.h)
-add_dependencies(env_node path_planning)
-target_link_libraries(env_node path_planning ${catkin_LIBRARIES} )
+add_executable(env_node
+        src/environment.cpp)
+add_dependencies(env_node
+        path_planning)
+target_link_libraries(env_node
+        path_planning
+        ${catkin_LIBRARIES} )
 
