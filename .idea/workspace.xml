@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="path_planning" targetName="gtest_main" />
+      <config projectName="path_planning" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="path_planning" targetName="path_planning" />
+      <config projectName="path_planning" targetName="tests" />
+      <config projectName="path_planning" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="path_planning" targetName="visualization_msgs_generate_messages_eus" />
+      <config projectName="path_planning" targetName="doxygen" />
+      <config projectName="path_planning" targetName="visualization_msgs_generate_messages_lisp" />
+      <config projectName="path_planning" targetName="std_msgs_generate_messages_cpp" />
+      <config projectName="path_planning" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="path_planning" targetName="visualization_msgs_generate_messages_py" />
+      <config projectName="path_planning" targetName="roscpp_generate_messages_eus" />
+      <config projectName="path_planning" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="path_planning" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="path_planning" targetName="std_msgs_generate_messages_py" />
+      <config projectName="path_planning" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="path_planning" targetName="download_extra_data" />
+      <config projectName="path_planning" targetName="run_tests" />
+      <config projectName="path_planning" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="path_planning" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="path_planning" targetName="visualization_msgs_generate_messages_cpp" />
+      <config projectName="path_planning" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="path_planning" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="path_planning" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="path_planning" targetName="clean_test_results" />
+      <config projectName="path_planning" targetName="rrt_node" />
+      <config projectName="path_planning" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="path_planning" targetName="env_node" />
+      <config projectName="path_planning" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="path_planning" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="path_planning" targetName="gtest" />
+      <config projectName="path_planning" targetName="visualization_msgs_generate_messages_nodejs" />
+      <config projectName="path_planning" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="path_planning" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="path_planning" targetName="roscpp_generate_messages_py" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="511e9182-fdce-4045-960d-1af2d9fdb1b5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/.idea/path_planning.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CATKIN_IGNORE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeCache.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CMakeCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CMakeCXXCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CMakeSystem.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/CMakeError.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/Makefile2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/clean_test_results.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/clean_test_results.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/clean_test_results.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/clean_test_results.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/download_extra_data.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/download_extra_data.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/download_extra_data.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/download_extra_data.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/doxygen.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/doxygen.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/doxygen.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/doxygen.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/env_node.dir/src/environment.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_eus.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_eus.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/geometry_msgs_generate_messages_py.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/src/obstacles.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/src/path_smooth.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/path_planning.dir/src/rrt.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_cpp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_eus.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_eus.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_eus.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_eus.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_lisp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_nodejs.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_py.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/roscpp_generate_messages_py.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/rrt_node.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/run_tests.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/run_tests.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/run_tests.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/run_tests.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_cpp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_eus.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_lisp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_nodejs.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_py.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/std_msgs_generate_messages_py.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/tests.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/tests.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/tests.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/tests.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_eus.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_eus.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_eus.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_py.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_py.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CMakeFiles/visualization_msgs_generate_messages_py.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin/catkin_generated/version/package.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/env_cached.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/generate_cached_setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/.rosinstall" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/_setup_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/env.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/path_planning.pc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/path_planningConfig-version.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/path_planningConfig.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/setup.bash" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/setup.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/installspace/setup.zsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/ordered_paths.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/package.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/pkg.develspace.context.pc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/pkg.installspace.context.pc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/setup_cached.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/stamps/path_planning/_setup_util.py.stamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/stamps/path_planning/interrogate_setup_dot_py.py.stamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/stamps/path_planning/package.xml.stamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/catkin_generated/stamps/path_planning/pkg.pc.em.stamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/.catkin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/.rosinstall" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/_setup_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/env.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/lib/libpath_planning.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/lib/path_planning/env_node" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/lib/pkgconfig/path_planning.pc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/setup.bash" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/setup.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/setup.zsh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/share/path_planning/cmake/path_planningConfig-version.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/devel/share/path_planning/cmake/path_planningConfig.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/flags.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/link.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/gtest_main.dir/progress.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CMakeFiles/progress.marks" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/CTestTestfile.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/cmake_install.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/gtest/gtest.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/cmake-build-debug/path_planning.cbp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/include/path_planning/obstacles.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/include/path_planning/path_smoothing.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/include/path_planning/rrt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/package.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/src/environment.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/src/obstacles.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/src/path_smoothing.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/src/rrt.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/path_planning/src/rrt_node.cpp" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="path_smoothing.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/path_smoothing.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1520">
+              <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/environment.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="path_smoothing.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/path_planning/path_smoothing.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <folding>
+                <element signature="e#79#101#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rrt_node.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rrt_node.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="272" column="34" lean-forward="true" selection-start-line="272" selection-start-column="34" selection-end-line="272" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>count</find>
+      <find>path</find>
+      <find>geometry_msgs</find>
+      <find>g3</find>
+      <find>addNewPointtoRRT</find>
+      <find>finalPath</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Vector2</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/path_planning/include/path_planning/path_smoothing.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/path_smoothing.cpp" />
+        <option value="$PROJECT_DIR$/include/path_planning/path_smoothing.h" />
+        <option value="$PROJECT_DIR$/src/rrt_node.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-197" />
+    <option name="y" value="-4" />
+    <option name="width" value="1853" />
+    <option name="height" value="1076" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="path_planning" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="path_planner" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="path_planning" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="path_planner" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="path_planner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="path_planning" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="path_planner" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="path_planner" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="path_planning" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="path_planner" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="path_planner" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="path_planning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="path_planning" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="path_planner" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="path_planner" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.rrt_node">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+    </configuration>
+    <configuration name="clean_test_results" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="clean_test_results" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="download_extra_data" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="download_extra_data" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="doxygen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="doxygen" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="env_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="env_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="path_planning" RUN_TARGET_NAME="env_node">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="geometry_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="geometry_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="geometry_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="geometry_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="geometry_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="geometry_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="path_planning" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="path_planning" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="roscpp_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="roscpp_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="roscpp_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="roscpp_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="roscpp_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="roscpp_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="rosgraph_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="rosgraph_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="rosgraph_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="rosgraph_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rosgraph_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="rosgraph_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="rrt_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="rrt_node" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="path_planning" RUN_TARGET_NAME="rrt_node">
+      <envs />
+    </configuration>
+    <configuration name="run_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="run_tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="std_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="std_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="std_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="std_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="std_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="std_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="tests" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="visualization_msgs_generate_messages_cpp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_eus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="visualization_msgs_generate_messages_eus" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_lisp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="visualization_msgs_generate_messages_lisp" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_nodejs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="visualization_msgs_generate_messages_nodejs" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <configuration name="visualization_msgs_generate_messages_py" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="path_planning" TARGET_NAME="visualization_msgs_generate_messages_py" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
+    <list size="36">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.clean_test_results" />
+      <item index="2" class="java.lang.String" itemvalue="Application.download_extra_data" />
+      <item index="3" class="java.lang.String" itemvalue="Application.doxygen" />
+      <item index="4" class="java.lang.String" itemvalue="Application.env_node" />
+      <item index="5" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_cpp" />
+      <item index="6" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_eus" />
+      <item index="7" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_lisp" />
+      <item index="8" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_nodejs" />
+      <item index="9" class="java.lang.String" itemvalue="Application.geometry_msgs_generate_messages_py" />
+      <item index="10" class="java.lang.String" itemvalue="Application.path_planning" />
+      <item index="11" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_cpp" />
+      <item index="12" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_eus" />
+      <item index="13" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_lisp" />
+      <item index="14" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_nodejs" />
+      <item index="15" class="java.lang.String" itemvalue="Application.roscpp_generate_messages_py" />
+      <item index="16" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_cpp" />
+      <item index="17" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_eus" />
+      <item index="18" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_lisp" />
+      <item index="19" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_nodejs" />
+      <item index="20" class="java.lang.String" itemvalue="Application.rosgraph_msgs_generate_messages_py" />
+      <item index="21" class="java.lang.String" itemvalue="Application.rrt_node" />
+      <item index="22" class="java.lang.String" itemvalue="Application.run_tests" />
+      <item index="23" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_cpp" />
+      <item index="24" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_eus" />
+      <item index="25" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_lisp" />
+      <item index="26" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_nodejs" />
+      <item index="27" class="java.lang.String" itemvalue="Application.std_msgs_generate_messages_py" />
+      <item index="28" class="java.lang.String" itemvalue="Application.tests" />
+      <item index="29" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_cpp" />
+      <item index="30" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_eus" />
+      <item index="31" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_lisp" />
+      <item index="32" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_nodejs" />
+      <item index="33" class="java.lang.String" itemvalue="Application.visualization_msgs_generate_messages_py" />
+      <item index="34" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="35" class="java.lang.String" itemvalue="Application.gtest_main" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="511e9182-fdce-4045-960d-1af2d9fdb1b5" name="Default" comment="" />
+      <created>1509256295837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1509256295837</updated>
+      <workItem from="1509256298240" duration="353000" />
+      <workItem from="1509256652195" duration="5850000" />
+      <workItem from="1509270246652" duration="14014000" />
+      <workItem from="1509374233645" duration="313000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="20530000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-197" y="-4" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22498618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18219896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13405405" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/path_smoothing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environment.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/path_planning/path_smoothing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#79#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rrt_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5420">
+          <caret line="271" column="47" lean-forward="true" selection-start-line="271" selection-start-column="47" selection-end-line="271" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/path_smoothing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/path_planning/path_smoothing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#79#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rrt_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/cmake/Ceres/CeresConfig.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4540">
+          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path_planning/src/path_smoothing.cpp" />
+    <entry file="file://$PROJECT_DIR$/path_planning/include/path_planning/path_smoothing.h" />
+    <entry file="file://$PROJECT_DIR$/path_planning/include/path_planning/obstacles.h" />
+    <entry file="file://$PROJECT_DIR$/path_planning/include/path_planning/rrt.h" />
+    <entry file="file://$PROJECT_DIR$/path_planning/src/rrt_node.cpp" />
+    <entry file="file://$PROJECT_DIR$/path_planning/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/include/path_planning/rrt.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/cmake/Ceres/CeresConfig.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="227" column="0" lean-forward="false" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/path_smoothing.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/environment.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/path_planning/path_smoothing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding>
+            <element signature="e#79#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rrt_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="272" column="34" lean-forward="true" selection-start-line="272" selection-start-column="34" selection-end-line="272" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
