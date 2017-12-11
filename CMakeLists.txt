@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(path_planning)
-
+set(CMAKE_CXX_STANDARD 11)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -30,7 +30,8 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 # include_directories(include)
-include_directories(include
+include_directories(
+		include
   		${catkin_INCLUDE_DIRS}
 		${EIGEN3_INCLUDE_DIRS}
 		${CERES_INCLUDE_DIRS}
@@ -41,7 +42,7 @@ add_library(path_planning
 		src/rrt.cpp
 		src/obstacles.cpp
 		src/path_smoothing.cpp
-		include/path_planning/path_smoothing.h)
+		src/cg_solver.cpp)
 
 ## Declare a cpp executable
 # add_executable(path_planning_node src/path_planning_node.cpp)

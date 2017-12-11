@@ -5,13 +5,17 @@
 #include "ceres/ceres.h"
 #include <visualization_msgs/Marker.h>
 #define MIN(a,b) a<b ? a : b
-#define MAXD 10
+#define MAXD 20
 
 class Vector2
 {
 public:
     double x;
     double y;
+    Vector2(){
+        x = 0;
+        y = 0;
+    }
     friend Vector2 operator-(Vector2 a,Vector2 b) ;
     friend Vector2 operator+(Vector2 a,Vector2 b) ;
     friend Vector2 operator*(double val,Vector2 a) ;
@@ -21,8 +25,10 @@ public:
 class PathSmooth : public ceres::FirstOrderFunction {
 private:
     int numParam;
+    Vector2 init;
+    Vector2 goal;
 public:
-    PathSmooth(int param);
+    PathSmooth(int param, double *X, double *Y);
     virtual bool Evaluate(const double* parameters,
                           double* cost,
                           double* gradient) const;

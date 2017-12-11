@@ -4,6 +4,7 @@
 #include <path_planning/rrt.h>
 #include <path_planning/obstacles.h>
 #include "path_planning/path_smoothing.h"
+#include "path_planning/cg_solver.h"
 #include <iostream>
 #include <cmath>
 #include <math.h>
@@ -192,6 +193,7 @@ int main(int argc,char** argv)
     visualization_msgs::Marker randomPoint;
     visualization_msgs::Marker rrtTreeMarker;
     visualization_msgs::Marker finalPath;
+    visualization_msgs::Marker smoothPath;
 
     initializeMarkers(sourcePoint, goalPoint, randomPoint, rrtTreeMarker, finalPath);
 
@@ -267,33 +269,42 @@ int main(int argc,char** argv)
             }
             setFinalPathData(rrtPaths, myRRT, shortestPath, finalPath, goalX, goalY);
             rrt_publisher.publish(finalPath);
-//            smooth the finalPath
-            int num = finalPath.points.size();
-            double *params = new double[2*num];
-            for(int i=0;i<num;i++)
-            {
-                params[(i-10)*2] = finalPath.points[i].x;
-                params[(i-10)*2+1] = finalPath.points[i].y;
-            }
-            ceres::GradientProblem problem(new PathSmooth(2*num));
-            ceres::GradientProblemSolver::Options options;
-            options.minimizer_progress_to_stdout = true;
-            options.line_search_direction_type = ceres::NONLINEAR_CONJUGATE_GRADIENT;
-            options.line_search_type = ceres::ARMIJO;
-//            options.max_num_iterations = 40;
+
+            CG_Solver solve(finalPath);
+            solve.Solve();
+            std::cout<<"solve over : "<<solve.tolorence<<std::endl;
+
+//            int num = finalPath.points.size();
+//            double *params = new double[2*(num-2)];
+//            double init[2] ,goal[2];
+//            init[0] = finalPath.points[0].x;
+//            init[1] = finalPath.points[0].y;
+//            goal[0] = finalPath.points[num-1].x;
+//            goal[1] = finalPath.points[num-1].y;
+//            for(int i=0;i<num-2;i++)
+//            {
+//                params[(i)*2] = finalPath.points[i+1].x;
+//                params[(i)*2+1] = finalPath.points[i+1].y;
+//            }
+//            ceres::GradientProblem problem(new PathSmooth(2*(num-2),init,goal));
+//            ceres::GradientProblemSolver::Options options;
+//            options.minimizer_progress_to_stdout = true;
+//            options.line_search_direction_type = ceres::NONLINEAR_CONJUGATE_GRADIENT;
+//            options.nonlinear_conjugate_gradient_type = ceres::POLAK_RIBIERE;
+//            options.line_search_type = ceres::ARMIJO;
+//            options.max_num_iterations = 400;
 //            std::cout<<"max_num_iterations: "<<options.max_num_iterations<<std::endl;
 //            options.max_lbfgs_rank = 400;
-            ceres::GradientProblemSolver::Summary summary;
-            ceres::Solve(options, problem, params, &summary);
-            delete[] params;
-            std::cout << summary.FullReport() << "\n\n";
+//            ceres::GradientProblemSolver::Summary summary;
+//            ceres::Solve(options, problem, params, &summary);
+//            delete[] params;
+//            std::cout << summary.FullReport() << "\n\n";
         }
 
 
         rrt_publisher.publish(sourcePoint);
         rrt_publisher.publish(goalPoint);
         rrt_publisher.publish(rrtTreeMarker);
-        //rrt_publisher.publish(finalPath);
         ros::spinOnce();
         ros::Duration(0.01).sleep();
     }

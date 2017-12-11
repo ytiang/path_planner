@@ -1,8 +1,0 @@
-prefix=/home/yt/ros_ws/catkin_ws_debug/src/path_planner/cmake-build-debug/devel
-
-Name: path_planning
-Description: Description of path_planning
-Version: 1.0.0
-Cflags: -I/home/yt/ros_ws/catkin_ws_debug/src/path_planner/include
-Libs: -L/home/yt/ros_ws/catkin_ws_debug/src/path_planner/cmake-build-debug/devel/lib -lpath_planning
-Requires: roscpp std_msgs visualization_msgs

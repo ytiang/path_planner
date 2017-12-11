@@ -1,2 +1,0 @@
-- setup-file:
-    local-name: /home/yt/ros_ws/catkin_ws_debug/src/path_planner/cmake-build-debug/devel/setup.sh

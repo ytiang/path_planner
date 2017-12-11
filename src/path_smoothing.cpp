@@ -4,125 +4,126 @@
 int PathSmooth::NumParameters() const {
     return numParam;
 }
-PathSmooth::PathSmooth(int param) {
+PathSmooth::PathSmooth(int param, double *X, double *Y ) {
     numParam = param;
+    init.x = X[0];
+    init.y = X[1];
+    goal.x = Y[0];
+    goal.y = Y[1];
 }
 bool PathSmooth::Evaluate(const double *const parameters, double *cost, double *gradient) const {
 
-    Vector2 *path = new Vector2[numParam/2];
-    int count = 0;
-    for(int i=0;i<numParam;i=i+2)
+    Vector2 *path = new Vector2[numParam/2 + 2];
+    *(path) = init;
+    int count = 1;
+    for(int i=0;i<numParam/2;i++)
     {
-        (path+count)->x = parameters[i];
-        (path+count)->y = parameters[i+1];
+        (path+count)->x = parameters[2*i];
+        (path+count)->y = parameters[2*i+1];
         count ++;
+    }
+    *(path+count) = goal;
+    count ++;
+    if(count != numParam/2+2)
+    {
+        std::cout<<"count is "<<count<< " while numParam is "<< numParam <<std::endl;
+        return false;
     }
     cost[0] = 0;
 //claculate the objective function
     vector<Vector2> deltaX;
     vector<Vector2> obstacle;
     vector<double> deltaTheta;
-    vector<double> k;
     Vector2 zero;
-    zero.x=0;
-    zero.y=0;
     deltaX.push_back(zero);
     deltaTheta.push_back(0.0);
-    k.push_back(0.0);
-    for(int i=0;i<count;i++) // i = 0 ~ count-1
+    obstacle.push_back(zero);
+    for(int i=1;i<count-1;i++) // i = 1 ~ count-2
     {
         double w1 = 10, w2 = 1, f1 = 0, f2 = 0, f3 = 0;
         Vector2 deltaX_i ,deltaX_ii;
-        if(i>0) {
-            deltaX_i = (*(path + i)) - (*(path + i - 1));
-            deltaX.push_back(deltaX_i);
-        }
-        if(i>0 && i<(count-1)) //i = 1~count-2
-        {
-            deltaX_ii = *(path+i+1) - *(path+i);
-            f1 = w1*pow(value(deltaX_i-deltaX_ii),2);
+        deltaX_ii = *(path+i+1) - *(path+i);
+        deltaX_i = (*(path + i)) - (*(path + i - 1));
+        deltaX.push_back(deltaX_i);
+        f1 = w1*pow(value(deltaX_i-deltaX_ii),2);
 
-            double deltaTheta_i = acos(dot(deltaX_i,deltaX_ii)/value(deltaX_i)/value(deltaX_ii));
-            deltaTheta.push_back(deltaTheta_i);
-            double k_i = deltaTheta_i/value(deltaX_i);
-            k.push_back(k_i);
-            f2 = w2*pow(k_i,2);
-        }
-
+        double deltaTheta_i = acos(dot(deltaX_i,deltaX_ii)/value(deltaX_i)/value(deltaX_ii));
+        deltaTheta.push_back(deltaTheta_i);
+        double k_i = deltaTheta_i/value(deltaX_i);
+        f2 = w2*pow(k_i,2);
         f3 = 99999999.0;
         vector< vector<geometry_msgs::Point> > obs = getObstacles();
+        Vector2 o;
         if(checkIfInsideBoundary(*(path+i)) && checkIfOutsideObstacles(obs,*(path+i)))
         {
-            Vector2 o = getClosestObstaclePoint(obs,*(path+i));
-            obstacle.push_back(o);
-            double minDis = value(*(path+i) - o);
-            f3 = pow(minDis - MAXD,2);
+             o = getClosestObstaclePoint(obs,*(path+i));
+
         } else{
-            Vector2 o;
-            o.x = 9999;
-            o.y = 9999;
-            obstacle.push_back(o);
+            o = *(path+i);
         }
+        obstacle.push_back(o);
+        double minDis = value(*(path+i) - o);
+        f3 = pow(minDis - MAXD,2);
         cost[0] += f1 + f2 + f3;
+
     }
 //    std::cout << "cost[0]: " << cost[0] << "  count: " << count << std::endl;
 //calculate gradient
     if (gradient != NULL) {
-        for(int i=0;i<count;i++) // i = 0~count-1
+        for(int i=1;i<count-1;i++) // i = 1~count-2
         {
             Vector2 g1, g2, g3;
             g1 = zero;
             g2 = zero;
             g3 = zero;
-            if(i>0 && i<(count - 1)) //i = 1~count-2
+
+            Vector2 R1i, R2i, R1i_, R2ii;
+            R1i = crossVector(deltaX[i],-deltaX[i+1]);
+            R2i = crossVector(-deltaX[i+1],-deltaX[i]);
+            g1 = - 4*(deltaX[i+1] - deltaX[i]);
+
+            double k1i ,k2i,ki;
+            ki = 2*deltaTheta[i]/pow(value(deltaX[i]),2);
+            k1i = -1/abs(sin(deltaTheta[i]));
+            k2i = -ki/2;
+            g2 = ki*(k1i*(-R1i-R2i) + k2i*deltaX[i]);
+
+            if(i>1 && i<count-2)
             {
-                Vector2 p1i, p2i, p1i_, p1ii;
-                p1i = crossVector(-deltaX[i],deltaX[i+1]);
-                p2i = crossVector(deltaX[i+1],-deltaX[i]);
-                g1 = - 4*(deltaX[i+1] - deltaX[i]);
-                double k1i ,k2i;
-                k1i = -1/abs(sin(deltaTheta[i]))/value(deltaX[i]);
-                k2i = -deltaTheta[i]/pow(value(deltaX[i]),3);
-                g2 = k1i*(p1i+p2i) + k2i*deltaX[i];
+                g1 = 2*(deltaX[i]-deltaX[i-1]) + g1 + 2*(deltaX[i+2]-deltaX[i+1]);
 
-                if(i>1 && i<count-2)
-                {
-                    g1 = 2*(deltaX[i]-deltaX[i-1]) + g1 + 2*(deltaX[i+2]-deltaX[i+1]);
+                R1i_ = crossVector(deltaX[i-1],-deltaX[i]);
+                g2 = g2 + -2*deltaTheta[i-1]/abs(sin(deltaTheta[i-1]))/pow(value(deltaX[i-1]),2)*R1i_;
 
-                    p1i_ = crossVector(deltaX[i-1],deltaX[i]);
-                    g2 = g2 + -1/abs(sin(deltaTheta[i-1]))/value(deltaX[i-1])*p1i_;
+                R2ii = crossVector(-deltaX[i+2],deltaX[i+1]);
+                double kii = 2*deltaTheta[i+1]/pow(value(deltaX[i+1]),2);
+                double k1ii = -1/abs(sin(deltaTheta[i+1]));
+                double k2ii = kii/2;
+                g2 = g2 + kii*(k1ii*R2ii + k2ii*deltaX[i+1]);
 
-                    p1ii = crossVector(-deltaX[i+2],deltaX[i+1]);
-                    double k1ii = -1/abs(sin(deltaTheta[i+1]))/value(deltaX[i+1]);
-                    double k2ii = deltaTheta[i+1]/pow(value(deltaX[i+1]),3);
-                    g2 = g2 + k1ii*p1ii + k2ii*deltaX[i+1];
-
-                }
-                else if(i == count-2)
-                {
-                    g1 = 2*(deltaX[i]-deltaX[i-1]) + g1 ;
-                    p1i_ = crossVector(deltaX[i-1],deltaX[i]);
-                    g2 = g2 + -1/abs(sin(deltaTheta[i-1]))/value(deltaX[i-1])*p1i_;
-                }
-                else if(i == 1)
-                {
-                    g1 = g1 + 2*(deltaX[i+2]-deltaX[i+1]);
-
-                    p1ii = crossVector(-deltaX[i+2],deltaX[i+1]);
-                    double k1ii = -1/abs(sin(deltaTheta[i+1]))/value(deltaX[i+1]);
-                    double k2ii = deltaTheta[i+1]/pow(value(deltaX[i+1]),3);
-                    g2 = g2 + k1ii*p1ii + k2ii*deltaX[i+1];
-                }
             }
-            if(obstacle[i].x > 100)
+            else if(i == count-2)
             {
-                g3 = zero;
-            } else{
-                g3 = 2*(value((*(path+i))-obstacle[i])-MAXD)/value((*(path+i))-obstacle[i])*((*(path+i))-obstacle[i]);
+                g1 = 2*(deltaX[i]-deltaX[i-1]) + g1 ;
+                R1i_ = crossVector(deltaX[i-1],-deltaX[i]);
+                g2 = g2 + -2*deltaTheta[i-1]/abs(sin(deltaTheta[i-1]))/pow(value(deltaX[i-1]),2)*R1i_;
             }
+            else if(i == 1)
+            {
+                g1 = g1 + 2*(deltaX[i+2]-deltaX[i+1]);
+
+                R2ii = crossVector(-deltaX[i+2],deltaX[i+1]);
+                double kii = 2*deltaTheta[i+1]/pow(value(deltaX[i+1]),2);
+                double k1ii = -1/abs(sin(deltaTheta[i+1]));
+                double k2ii = kii/2;
+                g2 = g2 + kii*(k1ii*R2ii + k2ii*deltaX[i+1]);
+            }
+
+            g3 = 2*(value((*(path+i))-obstacle[i])-MAXD)/value((*(path+i))-obstacle[i])*((*(path+i))-obstacle[i]);
+
             Vector2 g = g1 + g2 + g3;
-            gradient[2*i] = g.x;
-            gradient[2*i+1] = g.y;
+            gradient[2*(i-1)] = g.x;
+            gradient[2*(i-1)+1] = g.y;
         }
     }
     delete[] path;
